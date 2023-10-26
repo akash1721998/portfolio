@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styll.css">
+</head>
+<body>
+   
+ 
+      
+    <div class="header">
+        <nav>
+            <img  src="image/logo.png" class="logo">
+            <ul>
+                <li><a href="#header">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#services">PORTFOLIO</a></li>
+                <li><a href="#services">SERVICE</a></li>
+            </ul>
+        </nav>
+    
+       
+          <div class="details">
+            <h1>I'm <span>AKASH</span></h1>
+            <p>This is my official Portfolio websit to showes all 
+                <br>details and work experins web development
+            </p>
+            <a href="#">DOWNLOAD CV</a>
+            
+        </div> 
+           
+          <div class="image">
+            <img src="image/ak clg.jpg" class="ak">
+          </div>
+    </div> 
+<!---------about--------->
+    <div id="about">
+        
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/ak moll.jpg" >
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="subb-title">Intend to built a carrier with leading corporat of hi-teck environment with commited and dedicated people ,which will help me to explore myself fully and realise my potential. willing to work as a key player in challenging & creative environment.</p>
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contant active-tab " id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web Development</li>
+                            
+                            <li><span>C, C++</span><br>brief knowledge</li>
+                            <li><span>Java ,Java script</span><br>brief knowledge</li>
+                            <li><span>HTML</span><br>brief knowledge</li>
+                            <li><span>CSS</span><br>brief knowledge</li>
+                            <li><span>PYTHON</span><br>brief knowledge</li>
+                        </ul>
+                        <div class="tab-contant " id="Experience">
+                        <ul>
+                            <li><span>Brief knowledge of operating system</span><br>Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br>Web Development</li>
+                            <li><span>C, C++</span><br>brief knowledge</li>
+                            <li><span>Java ,Java script</span><br>brief knowledge</li>
+                            <li><span>HTML</span><br>brief knowledge</li>
+                            <li><span>CSS</span><br>brief knowledge</li>
+                            <li><span>PYTHON</span><br>brief knowledge</li>
+
+                        </ul>
+                        <div class="tab-contant " id="Education">
+                        <ul>
+                            <li><span>2022-2024</span><br>MCA </li>
+                            <li><span>2019-2022</span><br>BCA</li>
+                            <li><span>2018</span><br>inter</li>
+                            <li><span>2016</span><br>high school</li>
+                        </ul>
+                    </div>
+                </div>
+            
+         </div>
+
+        </div>
+    </div>
+
+    </div>
+<!---------services--------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+         <div>
+           <h2>Web Design</h2>
+           <p>Web designing is the process of planning, conceptualizing, and implementing the plan for designing a website in a way that is functional and offers a good user experience. User experience is central to the web designing process.</p>
+           <a href="#">Learn More</a>
+         </div>   
+         <div>
+            <h2>UI/UX</h2>
+            <p>Web designing is the process of planning, conceptualizing, and implementing the plan for designing a website in a way that is functional and offers a good user experience. User experience is central to the web designing process.</p>
+            <a href="#">Learn More</a>
+          </div>   
+          <div>
+            <h2>App | Design</h2>
+            <p>What is app design process?
+                How to Design a Mobile App: Step-by-Step Guide to App Design ...
+                App design is an ongoing process of creating user experience (UX) and user interface (UI) elements for your application. 
+                The first step in the mobile app design process is to determine the goal of the application and how it aligns with the needs of your target audience.</p>
+            <a href="#">Learn More</a>
+          </div>   
+        
+        </div>
+    </div>
+
+
+</div>
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontent = document.getElementsByClassName("tab-contant");
+    function opentab(tabname) {
+        for( tablink of  tablinks){
+            tablink.classList.remove("active-link");
+        }
+        
+        for(tabcontent of tabcontent){
+            tabcontent.classList.remove("active-tab");
+        }
+       
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+ 
+    
+</script>
+
+<footer>
+    <a href="#">FAQ</a>
+    <a href="#">Contact Me</a>
+    <a href="#">Terms of Use</a>
+    <a href="#">Privacy Policy</a>
+    
+    <a href="#" class="fotter">&copy; 2024 | Akash</a>
+</footer>
+
+</body>
+</html>
